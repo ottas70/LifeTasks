@@ -8,7 +8,7 @@ public class Adress {
     private String street = "";
     private String city = "";
     private String state = "";
-    private String file;
+    private String x;
 
     public Adress(String state) {
         this.state = state;
