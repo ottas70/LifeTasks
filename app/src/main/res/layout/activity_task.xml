@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="false"
+
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:id="@+id/mainPhoto"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu"
+                android:src="@drawable/ic_menu_white_36dp"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/informaceView"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+
+            <Button
+                android:id="@+id/addButton"
+
+                android:text="Add to list"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/buttonshapegreen"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_add_white_18dp"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/remove"
+                android:text="Remove from list"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:background="@drawable/buttonshapered"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_remove_white_18dp"
+                android:paddingLeft="10dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
