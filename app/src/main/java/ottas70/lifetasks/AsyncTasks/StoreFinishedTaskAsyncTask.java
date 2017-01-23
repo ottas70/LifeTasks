@@ -25,7 +25,7 @@ import ottas70.lifetasks.Task;
 public class StoreFinishedTaskAsyncTask extends AsyncTask<Void,Void,Void>{
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
     Task task;
     GetCallback callBack;
     ProgressDialog progressDialog;

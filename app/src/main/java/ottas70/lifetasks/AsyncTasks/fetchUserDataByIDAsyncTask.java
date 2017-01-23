@@ -2,7 +2,6 @@ package ottas70.lifetasks.AsyncTasks;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -26,7 +25,7 @@ import ottas70.lifetasks.User;
 public class fetchUserDataByIDAsyncTask extends AsyncTask<Void, Void, User> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
     int userID;
     GetUserCallback userCallBack;
     ProgressDialog progressDialog;

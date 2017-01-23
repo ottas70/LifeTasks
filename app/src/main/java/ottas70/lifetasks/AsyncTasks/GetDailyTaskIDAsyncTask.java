@@ -1,7 +1,6 @@
 package ottas70.lifetasks.AsyncTasks;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.AsyncTask;
 
 import org.apache.http.HttpEntity;
@@ -16,7 +15,6 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.DateFormat;
@@ -25,7 +23,6 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import ottas70.lifetasks.GetCallback;
-import ottas70.lifetasks.User;
 
 /**
  * Created by Ottas on 23.4.2016.
@@ -33,7 +30,7 @@ import ottas70.lifetasks.User;
 public class GetDailyTaskIDAsyncTask extends AsyncTask<Void,Void,Integer> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
     ProgressDialog progressDialog;
     GetCallback callBack;
     String date;

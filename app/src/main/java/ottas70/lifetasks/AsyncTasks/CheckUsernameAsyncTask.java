@@ -27,8 +27,8 @@ import ottas70.lifetasks.GetCallback;
 public class CheckUsernameAsyncTask extends AsyncTask<Void, Void, Boolean> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
-    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/images/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
+    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/LifeTasks/images/";
     ProgressDialog progressDialog;
     GetCallback callBack;
     String username;

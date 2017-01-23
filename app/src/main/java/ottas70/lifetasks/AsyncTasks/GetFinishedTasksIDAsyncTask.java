@@ -2,7 +2,6 @@ package ottas70.lifetasks.AsyncTasks;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -22,7 +21,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import ottas70.lifetasks.GetCallback;
-import ottas70.lifetasks.Task;
 import ottas70.lifetasks.User;
 
 /**
@@ -31,7 +29,7 @@ import ottas70.lifetasks.User;
 public class GetFinishedTasksIDAsyncTask extends AsyncTask<Void,Void,ArrayList<Integer>> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
     ProgressDialog progressDialog;
     GetCallback callBack;
     User user;

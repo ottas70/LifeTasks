@@ -2,16 +2,12 @@ package ottas70.lifetasks.AsyncTasks;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
@@ -31,8 +27,8 @@ import ottas70.lifetasks.Task;
 public class GetTasksAsyncTask extends AsyncTask<Void, Void, ArrayList<Task>> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
-    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/images/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
+    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/LifeTasks/images/";
     ProgressDialog progressDialog;
     GetCallback callBack;
 

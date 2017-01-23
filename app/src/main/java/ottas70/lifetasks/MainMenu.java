@@ -1,40 +1,27 @@
 package ottas70.lifetasks;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.location.Location;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import ottas70.lifetasks.TaskActivity.TaskActivity;
 
@@ -76,7 +63,7 @@ public class MainMenu extends DrawerActivity implements GoogleApiClient.Connecti
         //LifeTasks.sortByLocation(this);
         LifeTasks.sortByPopularity();
 
-        Picasso.with(this).load("http://ottas70.com/images/mainPhoto.jpg").fit().centerCrop().into(mainPhoto);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/mainPhoto.jpg").fit().centerCrop().into(mainPhoto);
 
 
         addDailyTask();

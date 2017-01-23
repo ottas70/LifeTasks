@@ -8,32 +8,32 @@ import java.util.Date;
 
 import ottas70.lifetasks.AsyncTasks.CheckEmailAsyncTask;
 import ottas70.lifetasks.AsyncTasks.CheckUsernameAsyncTask;
+import ottas70.lifetasks.AsyncTasks.DeleteFinishedTaskAsyncTask;
 import ottas70.lifetasks.AsyncTasks.DeleteTaskInProgressAsyncTask;
+import ottas70.lifetasks.AsyncTasks.FetchUserDataAsyncTask;
 import ottas70.lifetasks.AsyncTasks.GetDailyTaskIDAsyncTask;
 import ottas70.lifetasks.AsyncTasks.GetDailyTasksIDAsyncTask;
+import ottas70.lifetasks.AsyncTasks.GetFinishedTasksIDAsyncTask;
+import ottas70.lifetasks.AsyncTasks.GetPhotosUrlAsyncTask;
+import ottas70.lifetasks.AsyncTasks.GetReviewsAsyncTask;
+import ottas70.lifetasks.AsyncTasks.GetTasksAsyncTask;
 import ottas70.lifetasks.AsyncTasks.GetTasksInProgressIDAsyncTask;
 import ottas70.lifetasks.AsyncTasks.ImageEncoder;
 import ottas70.lifetasks.AsyncTasks.StoreFinishedTaskAsyncTask;
 import ottas70.lifetasks.AsyncTasks.StoreTaskInProgressAsyncTask;
 import ottas70.lifetasks.AsyncTasks.StoreUserDataAsyncTask;
 import ottas70.lifetasks.AsyncTasks.UpdateUserDataAsyncTask;
-import ottas70.lifetasks.AsyncTasks.addPointsToUserAsyncTask;
-import ottas70.lifetasks.AsyncTasks.DeleteFinishedTaskAsyncTask;
-import ottas70.lifetasks.AsyncTasks.FetchUserDataAsyncTask;
-import ottas70.lifetasks.AsyncTasks.GetFinishedTasksIDAsyncTask;
-import ottas70.lifetasks.AsyncTasks.GetPhotosUrlAsyncTask;
-import ottas70.lifetasks.AsyncTasks.GetReviewsAsyncTask;
-import ottas70.lifetasks.AsyncTasks.GetTasksAsyncTask;
 import ottas70.lifetasks.AsyncTasks.UploadImageNameAsyncTask;
 import ottas70.lifetasks.AsyncTasks.UploadPhotoToTaskAsyncTask;
 import ottas70.lifetasks.AsyncTasks.UploadReviewAsyncTask;
 import ottas70.lifetasks.AsyncTasks.UploadTaskAsyncTask;
+import ottas70.lifetasks.AsyncTasks.addPointsToUserAsyncTask;
 
 public class ServerRequest {
 
     private ProgressDialog progressDialog;
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
 
     public ServerRequest(Context context){
         progressDialog = new ProgressDialog(context);

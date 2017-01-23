@@ -249,7 +249,7 @@ public class AddTask extends Activity {
                       @Override
                       public void done(Object o) {
                           makeHTTPCall((String) o,task.getMainPhotoUrl(),true);
-                          task.setMainPhotoUrl("http://ottas70.com/images/"+task.getMainPhotoUrl());
+                          task.setMainPhotoUrl("http://ottas70.com/LifeTasks/images/" + task.getMainPhotoUrl());
                       }
                   });
                 for (int i = 0; i < uris.size(); i++) {
@@ -286,7 +286,7 @@ public class AddTask extends Activity {
         params.put("filename", filename);
         storeFilename(filename);
         AsyncHttpClient client = new AsyncHttpClient();
-        client.post("http://ottas70.com/UploadImage.php",
+        client.post("http://ottas70.com/LifeTasks/UploadImage.php",
                 params, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {

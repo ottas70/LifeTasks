@@ -21,9 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import ottas70.lifetasks.GetCallback;
-import ottas70.lifetasks.Review;
 import ottas70.lifetasks.Task;
-import ottas70.lifetasks.User;
 
 /**
  * Created by Ottas on 30.12.2015.
@@ -31,8 +29,8 @@ import ottas70.lifetasks.User;
 public class GetPhotosUrlAsyncTask extends AsyncTask<Void,Void,ArrayList<String>> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
-    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/images/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
+    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/LifeTasks/images/";
     ProgressDialog progressDialog;
     GetCallback callBack;
     Task task;

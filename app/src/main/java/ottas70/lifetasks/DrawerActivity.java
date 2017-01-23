@@ -1,20 +1,12 @@
 package ottas70.lifetasks;
 
 import android.app.Activity;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
@@ -53,8 +45,8 @@ public class DrawerActivity extends Activity {
 
         super.setContentView(drawerLayout);
 
-        Picasso.with(this).load("http://ottas70.com/images/"+LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userImage);
-        Picasso.with(this).load("http://ottas70.com/images/"+LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profile);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userImage);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profile);
 
         username.setText(LifeTasks.instance.getUser().getUsername());
         email.setText(LifeTasks.instance.getUser().getEmail());
@@ -73,7 +65,7 @@ public class DrawerActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        Picasso.with(this).load("http://ottas70.com/images/"+LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userImage);
-        Picasso.with(this).load("http://ottas70.com/images/"+LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profile);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userImage);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profile);
     }
 }

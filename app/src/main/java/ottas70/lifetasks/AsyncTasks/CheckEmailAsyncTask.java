@@ -2,7 +2,6 @@ package ottas70.lifetasks.AsyncTasks;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -17,14 +16,10 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import ottas70.lifetasks.Adress;
 import ottas70.lifetasks.GetCallback;
-import ottas70.lifetasks.Task;
-import ottas70.lifetasks.User;
 
 /**
  * Created by Ottas on 17.4.2016.
@@ -32,8 +27,8 @@ import ottas70.lifetasks.User;
 public class CheckEmailAsyncTask extends AsyncTask<Void, Void, Boolean> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
-    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/images/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
+    public static final String IMAGE_URL_ADRESS = "http://ottas70.com/LifeTasks/images/";
     ProgressDialog progressDialog;
     GetCallback callBack;
     String email;

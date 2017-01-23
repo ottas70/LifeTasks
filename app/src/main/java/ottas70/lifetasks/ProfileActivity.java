@@ -104,8 +104,8 @@ public class ProfileActivity extends DrawerActivity {
 
         oldColors = completed.getTextColors();
 
-        Picasso.with(this).load("http://ottas70.com/images/" + LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userPhoto);
-        Picasso.with(this).load("http://ottas70.com/images/" + LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profilePhoto);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getAccountPhotoName()).fit().centerCrop().into(userPhoto);
+        Picasso.with(this).load("http://ottas70.com/LifeTasks/images/" + LifeTasks.instance.getUser().getProfilePhotoName()).transform(new CircleTransform()).into(profilePhoto);
 
         username.setText(LifeTasks.instance.getUser().getUsername());
         if (!LifeTasks.instance.getUser().getRealName().equals("")) {
@@ -296,7 +296,7 @@ public class ProfileActivity extends DrawerActivity {
         params.put("filename", filename);
         storeFilename(profile,filename);
         AsyncHttpClient client = new AsyncHttpClient();
-        client.post("http://ottas70.com/UploadImage.php",
+        client.post("http://ottas70.com/LifeTasks/UploadImage.php",
                 params, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {

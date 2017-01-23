@@ -18,9 +18,6 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 
 import ottas70.lifetasks.GetUserCallback;
@@ -29,7 +26,7 @@ import ottas70.lifetasks.User;
 public class FetchUserDataAsyncTask extends AsyncTask<Void, Void, User> {
 
     public static final int CONNECTION_TIMEOUT = 1000*15;
-    public static final String SERVER_ADRESS = "http://ottas70.com/";
+    public static final String SERVER_ADRESS = "http://ottas70.com/LifeTasks";
     User user;
     GetUserCallback userCallBack;
     ProgressDialog progressDialog;
